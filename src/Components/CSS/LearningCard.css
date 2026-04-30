@@ -1,0 +1,26 @@
+.Learning-div{
+    background-color: #EBE8E5;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    gap: 20px;
+    padding: 5px;
+}
+
+p:nth-child(1){
+    font-family: sans-serif;
+    color : black;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p:nth-child(2){
+    color: rgb(82, 80, 80);
+    line-height: 25px;
+}
