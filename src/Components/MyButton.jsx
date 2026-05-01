@@ -8,6 +8,7 @@ const MyButton = ({text,handleClick ,style}) => {
             border : style.border,
             fontWeight : 600,
             color : hover ?  style.hoverColor   :  style.color ,
+            borderRadius : "4px "
     }
     console.log(text)
   return (

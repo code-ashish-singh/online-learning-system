@@ -1,6 +1,7 @@
 import React from 'react'
 import './CSS/StudyCards.css'
 import { Link } from 'react-router-dom'
+import {Clock4,BookOpen} from 'lucide-react'
 const StudyCards = ({srcUrl,title,duration,lesson,price,}) => {
   return (
      <>
@@ -8,15 +9,17 @@ const StudyCards = ({srcUrl,title,duration,lesson,price,}) => {
                 <div className="img-div">
                         <img src={srcUrl} alt="" />
                 </div>
-                <p>{title}</p>
+               <div className="content-div">
+                    <p>{title}</p>
                 <div className="time-lesson">
-                    <div>{duration}</div>
-                   <div> {lesson}</div>
+                    <div> <Clock4 color='red' /> {duration}</div>
+                   <div> <BookOpen color='red' /> {lesson}</div>
                 </div>
                 <div className="price-enroll">
-                    {price}
+                   <span> {price}</span>
                     <Link to='#'>Enroll now</Link>
                 </div>
+               </div>
          </div>
      </>
   )

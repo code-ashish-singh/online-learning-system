@@ -1,8 +1,14 @@
+
+
+.outer-div{
+    background-color:  #F2F0ED ;
+}
 .main-card{
     height: 100vh;
     width : 100%;
     background-color: #0057B6;
 }
+
 .main-inside{
     height: 100%;
     width : 100%;
@@ -268,19 +274,131 @@
    align-items: center;
    width: 100%;
    height: 55%;
-   margin-top: 20px;
+   margin-top: 40px;
    margin-bottom: 30px;
 }
 
 .inside-cards-group{
      width: 80%;
     height: 100%;
-    background-color: skyblue;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-left: 30px;
+    padding-left: 10px;
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
+    gap: 10px;
+    
+}
+
+.inside-cards-group::-webkit-scrollbar{
+    display: none;
+}
+
+
+.purpose{
+
+    height: 60vh;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F0ED;
+}
+
+.purpose-inside{
+    height: 100%;
+    width: 80%;
+    border: 5px solid gray;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.purpose-inside > .purpose-p{
+    color: #0057B6;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: sans-serif ;
+    
+}
+
+.purpose-inside > h4{
+  
+  color: #4C5154;
+  font-size: 2.2rem;
+
+}
+
+.purpose-inside > h6{
+   color: #5F666B;
+   font-size: 1rem;
+}
+
+.meet-our-faculty{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+   text-align: center;
+   padding-top: 50px;
+}
+
+.meet-our-faculty > .meet-p{
+    color:  #0057B6;
+    text-transform: uppercase;
+}
+.meet-our-faculty > h2 {
+   text-transform: capitalize;
+   color: #41464A;
+   font-size: 2.2rem;
+}
+.meet-our-faculty > h6 {
+color:  #656A6F;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.meet-card-contain{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    padding-left: 70%;
+    gap: 20px;
+   
+}
+
+.meet-card-contain::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+
+.learner-div{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.inside-learner-div{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 80%;
+    height: 100%;
 }

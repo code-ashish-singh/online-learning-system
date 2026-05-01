@@ -1,0 +1,28 @@
+.meet-card{
+    height: 350px;
+    width: 300px;
+    border: 2px solid rgb(53, 51, 51);
+    padding: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.meet-card > img{
+    height: 70%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.meet-card > h1 {
+    margin: 0;
+    color: #41464A;
+    font-size: 1.3em;
+}

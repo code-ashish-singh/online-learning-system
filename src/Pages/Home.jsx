@@ -5,6 +5,7 @@ import MyButton from '../Components/MyButton'
 import { Check , GraduationCap , BookOpenText , NotebookPen,Globe , Goal , Camera ,BookOpenCheck , SquareBottomDashedScissors} from 'lucide-react'
 import LearningCard from '../Components/LearningCard'
 import StudyCards from '../Components/StudyCards'
+import MeetCard from '../Components/MeetCard'
 const Home = () => {
   const handleClick  = () => {
     alert('clicked')
@@ -16,7 +17,8 @@ const Home = () => {
 
   return (
     <>
-     <Header/>
+       <div className="outer-div">
+             <Header/>
      {/* here is the hero section  */}
       <div className='main-card'>
           <div className='main-inside'>
@@ -239,6 +241,126 @@ const Home = () => {
                      />
       </div>
     
+      <div className="purpose">
+                  <div className="purpose-inside">
+                       <p className='purpose-p'>Transform Your Learning Experience</p>
+                       <h4>Learn with Purpose. Grow with Impact.</h4>
+                       <h6>Every Epsilon course combines structured learning with hands-on practice. Experience the difference of Epsilon <br /> mentorship, interactive projects, and measurable results.</h6>
+                       <MyButton 
+                        text="Join the Next Intake" 
+                        handleClick={handleClick}
+                        style={
+                         {
+                           bg : "red",
+                           hoverBgColor : "blue",
+                           color : "white",
+                           hoverColor : "white",
+                           border : "none"
+                         }
+                        }
+                     />
+                  </div>
+
+      </div>
+
+      
+      <div className='meet-our-faculty'>
+                <p className='meet-p'>
+                  Study according to your progress
+                </p>
+                <h2>
+                  Meet Our Faculty
+                </h2>
+                <h6>
+                  Our faculty consists of scholars, researchers, and industry professionals dedicated to advancing knowledge.  They <br /> bring academic excellence, mentorship, and real-world perspective to every program.
+                </h6>
+                <div className='meet-card-contain'>
+                     
+                          <MeetCard 
+                            src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                            name="Mr. Aiden"
+                            dignation="Course Trainer"
+                          />
+
+                            <MeetCard 
+                             src="https://t4.ftcdn.net/jpg/06/45/77/79/360_F_645777959_fNnaNoeVO4qxCNPW9MWr3gQlPFSGA9yL.jpg"
+                            name="Dr. Evelyn Reed"
+                            dignation="Senior Instructional Designer "
+                          />
+
+                            <MeetCard 
+                           src="https://www.shutterstock.com/image-photo/happy-cheerful-45-year-old-600nw-2353012797.jpg"
+                            name="Aisha Khan"
+                            dignation="Data Science Instructor"
+                          />
+
+
+                            <MeetCard 
+                            src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?semt=ais_hybrid&w=740&q=80"
+                            name="Prof. Alan Grant"
+                            dignation=" Digital Marketing Expert"
+                          />
+
+                            <MeetCard 
+                           src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
+                            name="Sarah Jenkins"
+                            dignation="Professional UX/UI Educator"
+                          />
+
+                            <MeetCard 
+                           src="https://www.shutterstock.com/image-photo/young-european-businessman-company-boss-260nw-2602266467.jpg"
+                            name=" Liam Peterson"
+                            dignation=" Cybersecurity Curriculum Lead"
+                          />
+
+                 
+
+                </div>
+                       
+                 <MyButton 
+                        text="See All Faculty Members" 
+                        handleClick={handleClick}
+                        style={
+                         {
+                           bg : "red",
+                           hoverBgColor : "blue",
+                           color : "white",
+                           hoverColor : "white",
+                           border : "none"
+                         }
+                        }
+                     />
+
+                    
+
+      </div>
+
+      
+          
+      
+
+      <div className='learner-div'>
+             <div className="inside-learner-div">
+                <div className='first-learner'>
+                        <p>Testimonials</p>
+                        <h2>Voices from Our  <br />Learners</h2>
+                        <h4>Hear from learners who’ve transformed their skills <br /> and Epsilon confidence through Epsilon.</h4>
+                        <div>
+                          <div className="photo-collection">
+
+                          </div>
+                          <div className="learner-number">
+                            <p>99%</p>
+                            <h4>Satisfaction</h4>
+                          </div>
+                        </div>
+                </div>
+               
+                
+             </div>
+      </div>
+
+       </div>
     </>
   )
 }
